@@ -16,7 +16,9 @@ jobs:
           java-version: '11'
       - name: Cobol Run Check
         env: 
-          ZOWE_USERNAME: 
-          ZOWE_PASSWORD: 
+          ZOWE_USERNAME: ${{ ZOWE_USERNAME }}
+          ZOWE_PASSWORD: ${{ ZOWE_PASSWORD }}
           
+        run:
+
         
