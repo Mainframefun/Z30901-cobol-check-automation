@@ -1,7 +1,22 @@
 name: Automated Cobol Check
 
-do:
+on:
   push:
     branches: [ MAIN ]
 
+jobs:
+  Cobol-Check:
+    runs-on: Mac-OS
 
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+      - name: Cobol Run Check
+        env: 
+          ZOWE_USERNAME: 
+          ZOWE_PASSWORD: 
+          
+        
