@@ -6,7 +6,7 @@ on:
 
 jobs:
   Cobol-Check:
-    runs-on: Mac-OS
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
