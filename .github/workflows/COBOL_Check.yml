@@ -22,3 +22,5 @@ jobs:
         run: |
         chmod +x .github/scripts/zowe_operations.sh 
         .github/scripts/zowe_operations.sh
+        chmod +x .github/scripts/Mainframe_Operations.sh
+        .github/scripts/Mainframe_Operations.sh
